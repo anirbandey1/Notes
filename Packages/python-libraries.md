@@ -10,6 +10,15 @@ pip3 install pynvim
 # python3-pip install pynvim
 ```
 
+Jupter Lab
+
+```
+pacman -sS jupyterlab
+sudo pacman -S jupyterlab
+jupyter lab
+# isolate workspaces and run in a separate workspace
+```
+
 Python Libraries
 
 ```

@@ -20,3 +20,16 @@ To set nvim as the editor to write commit messages for git
 ```
 git config --global core.editor nvim
 ```
+
+
+
+
+If you want to list all the files currently being tracked under the branch master, you could use this command:
+```
+git ls-tree -r master --name-only
+```
+If you want a list of files that ever existed (i.e. including deleted files):
+```
+git log --pretty=format: --name-only --diff-filter=A | sort - | sed '/^$/d'
+```
+
