@@ -97,42 +97,4 @@ history
   441  sudo usermod -aG audio darklord
   442  groups
   443  reboot
-  444  ls
-  445  cd Code/
-  446  cd Notes/
-  447  ls
-  448  cd ..
-  449  ls
-  450  cd DSA/
-  451  ls
-  452  ls -a
-  453  cp .gdbinit .vimrc ~
-  454  ls
-  455  cd ..
-  456  cd ..
-  457  l
-  458  ls
-  459  ls -a
-  460  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-  461  vim +PluginInstall +qall
-  462  pacman -S astyle
-  463  sudo pacman -S astyle
-  464  vim
-  465  clear
-  466  ls
-  467  cd Code/
-  468  ls
-  469  cd n
-  470  cd Notes/
-  471  ls
-  472  cat github.md 
-  473  mkdir Arch
-  474  cd Arch/
-  475  ld
-  476  ls
-  477  vim sound.md
-  478  vim sound.md
-  479  ls
-  480  cat sound.md 
-  481  history >> sound.md 
 ```
