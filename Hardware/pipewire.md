@@ -21,7 +21,11 @@ pkill wireplumber
 wireplumber & 
 ```
 
+### Reference
 
+[wireplumber](https://www.youtube.com/watch?v=gOhWDGA8pC8)
+[pipewire-media-session(deprecated)](https://www.youtube.com/watch?v=zmNCi9wqiuU)
+[linux audio in general](https://youtu.be/HxEXMHcwtlI)
 
 
 
