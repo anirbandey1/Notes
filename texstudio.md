@@ -11,4 +11,7 @@ sudo apt install texlive-latex-recommended
 sudo apt install texlive-generic-extra
 sudo apt install texlive-latex-extra-doc
 sudo apt install texlive-latex-extra
+
+sudo apt-file search fontawesome5.sty
+sudo apt install texlive-fonts-extra
 ```
