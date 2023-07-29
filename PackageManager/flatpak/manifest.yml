@@ -1,0 +1,60 @@
+app-id: org.flatpak.Hello
+runtime: org.freedesktop.Platform
+runtime-version: '22.08'
+sdk: org.freedesktop.Sdk
+command: run.sh
+finish-args:
+  - --share=ipc
+  - --share=network
+  - --socket=x11
+  - --socket=pulseaudio
+  - --device=dri
+  # - --filesystem=home
+modules:
+
+  - name: run
+    buildsystem: simple
+    build-commands:
+      - install -D run.sh /app/bin/run.sh
+    sources:
+      - type: script
+        dest-filename:  run.sh
+        commands:
+          - 'echo "Running Inside Sandbox" '
+          - '/app/opt/pfetch/pfetch'
+          - '/app/opt/openai-client-debian/openai-client-bin/binaries/main'
+
+  - name: pfetch
+    buildsystem: simple
+    build-commands:
+      - mkdir -pv /app/opt/pfetch
+      - cp -rv . /app/opt/pfetch
+    sources:
+      - type: git
+        url: https://github.com/dylanaraps/pfetch.git
+  - name: openai-client-git
+    buildsystem: simple
+    build-commands:
+      - mkdir -pv /app/share/applications
+      - mkdir -pv /app/share/icons
+      - install -D desktop/openai-client.desktop /app/share/applications/openai-client.desktop
+      - install -D desktop/openai-client.jpg /app/share/icons/openai-client.jpg
+    sources:
+      - type: git
+        url: https://github.com/anirbandey1/openai-client.git
+        branch: master
+  - name: openai-client-debian
+    buildsystem: simple
+    build-commands:
+      - ar -x openai-client.deb
+      - rm -f openai-client.deb
+      - tar -xf data.tar.*
+      - rm -f control.tar.gz data.tar.* debian-binary
+      - mkdir -pv /app/opt/openai-client-debian
+      - cp -rv opt/* /app/opt/openai-client-debian
+
+    sources:
+      - type: file
+        url: "https://github.com/anirbandey1/openai-client/releases/download/v1.0.0/openai-client.deb"
+        dest-filename: "openai-client.deb"
+        sha256: "c2f40a9a98805b27815d2e70cf6f07b6e2161f27098ebb98429a2fe0a7e6c995"
