@@ -90,3 +90,18 @@ This program allows the user to; create, start, edit, pause and stop VMs. Whilst
 $ sudo pacman -S virt-manager
 ```
 
+
+# Personal take
+
+Additional software you may need 
+
+```
+sudo pacman -S bridge-utils
+```
+
+
+To check if libvirtd is missing anything
+```
+sudo systemctl status libvirtd
+sudo systemctl restart libvirtd
+```
