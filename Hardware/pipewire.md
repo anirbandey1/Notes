@@ -3,12 +3,19 @@
 Install
 ```
 sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pipewire-docs 
+<<<<<<< HEAD
+=======
+
+>>>>>>> db32855 (audacity ffmpeg)
 sudo pacman -S wireplumber
 sudo pacman -S pavucontrol
 
 # Optional
 # sudo pacman -S helvum easyeffects
+<<<<<<< HEAD
 
+=======
+>>>>>>> db32855 (audacity ffmpeg)
 ```
 
 I tried adding **wireplumber &** to ~/.config/qtile/initialize_script.sh
