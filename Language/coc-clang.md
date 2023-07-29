@@ -31,12 +31,20 @@ rm ~/.clang-format
 
 To get the current clang-format being used
 ```
-clang-format -dump-config <filename.cpp>
+# specify file 
+# clang-format -dump-config <filename.cpp>
+
+# or just use 
+clang-format -dump-conf 
 ```
 
-To copy defaults Replace 
+To copy defaults to ~/.clang-format
 ```
-clang-format -dump-config <filename.cpp>  > ~/.clang-format
+# specify file
+# clang-format -dump-config <filename.cpp>  > ~/.clang-format
+
+# or just use
+clang-format -dump-config > ~/.clang-format
 ```
 
 In my Arch 
