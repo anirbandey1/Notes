@@ -1,5 +1,6 @@
+```
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-
+```
 
 Just add Github fingerprint to known hosts this way:
 ```
