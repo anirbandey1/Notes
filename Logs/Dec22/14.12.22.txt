@@ -1,0 +1,11 @@
+14 Dec 22 Wednesday
+
+Well, I appeared for a DSA exam and it didn't go as I had planned. The first two questions were easy - Celebrity Problem and Find Nth node from the end of Linked List.
+
+However, I couldn't solve the 3rd problem - Min Stack.
+My mistake was distro hopping and not solving leetcode questions regularly.
+BIG MISTAKE!!!must rectify ASAP
+
+Maths exam is scheduled to be held tomorrow. Syllabus is Differential Calculus and Vectors.
+Lets see.
+First, I'll do DE part2

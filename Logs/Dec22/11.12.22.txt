@@ -1,0 +1,26 @@
+11 Dec 22 Sunday
+
+We have our CT from Tuesday and I have no clue as to what I'll write in it
+Lets see well I think Linux is my best friend. I have a lot to confess to you my dear.
+Lets start the world I am living is changing very fast and I dont know what to do It seems to me that coding is extremely difficult and its going to take a lot of time to master it
+
+It takes time to learn touch typiing I hope I'll learn it in 2-3 months I don't know what to do
+Now about DBMS there are a few things I should keep in mind.
+There is something called a three schema architecture. You see it involves data abstraction.
+
+So basically there are there are three views - External view, Conceptual View and Physical view.
+External view is what regular users can see. Conceptual view is based on E-R models or Relational models.
+
+In ER model, there are certain mappings :-
+1) One One 
+2) One Many
+3) Many Many
+
+The interesting thing about these mappings ia that they have to be analyzed so that we can minimize the number of the tables involved by merging primary keys of relationships
+
+Say there are two entities - Employees and Departments 
+In the Employees table, the primary key is  Employee id
+and in the Departments table, the primary key is Department id
+The relationship (also called correspondence) is the Works table
+Now, the works table needs only two columns - the primary keys of the Employee and Department tables 
+So its two columns are - Eid (Employee id) and Did(Department id) 
