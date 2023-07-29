@@ -3,14 +3,25 @@
 get
 ```
 gsettings get org.gnome.desktop.interface gtk-theme
+gsettings get org.gnome.desktop.interface icon-theme
 ```
 
 set 
 ```
 gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
+gsettings set org.gnome.desktop.interface icon-theme Adwaita-dark
 ```
 
-to check if you are running wayland or xorg
+To set the title bar button order for the GNOME window manager (Mutter, Metacity)
+```
+gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
+```
+
+Install Xorg
+```
+sudo pacman -S xorg
+```
+To check if you are running Wayland or Xorg
 ```
 echo $XDG_SESSION_TYPE
 ```
