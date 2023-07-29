@@ -16,7 +16,12 @@ pip freeze
 pip freeze > requirements.txt
 ```
 
+### Remove all packages in virtual environment
+```
+pip freeze | xargs pip uninstall -y
+```
 
+Deactivate
 ```
 deactivate
 ```

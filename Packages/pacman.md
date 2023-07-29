@@ -22,7 +22,41 @@ When you install a package with Pacman, it stores all downloaded packages in
 ```
 /var/cache/pacman/pkg/ 
 ```
-folder. The package manager doesn’t remove old and uninstalled packages 
-automatically by default and after a while, the cache size can consume a 
-substantial amount of real estate on your HDD or SDD.
+
+The package manager doesn’t remove old and uninstalled packages 
+automatically by default.
+
+To check how many packages are in the paccache
+```
+ls /var/cache/pacman/pkg/ | wc -l
+```
+
+To know how much space the cache is taking
+```
+du -sh /var/cache/pacman/pkg/
+```
+
+To clear the cache, except the last three versions of each package by typing
+```
+sudo paccache -r
+```
+
+To clear the cache from your uninstalled packages
+```
+sudo paccache -ruk0
+```
+U in this command stands for all the uninstalled package
+
+### Uninstall total cache (Caution Danger)
+
+Another method to clear uninstalled packages is using
+```
+sudo pacman -Sc
+```
+Or to completely remove it use
+```
+sudo pacman -Scc
+```
+Just be careful with cleaning the cache and packages with this command,
+it seems tempting to use it, but once deleted there’s no turning back.
 

@@ -1,3 +1,5 @@
+# GRUB
+
 Change grub configuration
 ```
 sudo vim /etc/default/grub
@@ -9,6 +11,12 @@ GRUB_SAVEDEFAULT=true
 GRUB_DEFAULT=saved
 ```
 
+To detect other bootable partitions
+```
+GRUB_DISABLE_OS_PROBER=false
+```
+
+On Ubuntu
 ```
 sudo update-grub
 ```
