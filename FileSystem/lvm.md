@@ -11,5 +11,10 @@ To deactivates the volume group vg, use this command
 
 ```
 vgchange -a n vg
+```
 
+Increase size of my lvm
+
+```
+lvextend -L +10G /dev/vg0/lv_root
 ```
