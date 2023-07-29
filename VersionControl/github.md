@@ -21,8 +21,11 @@ To set nvim as the editor to write commit messages for git
 git config --global core.editor nvim
 ```
 
-
-
+Change visibility to private, public, internal
+```
+gh repo edit --visibility <visibility-string>
+```
+Where visibility-string = private,public or internal
 
 If you want to list all the files currently being tracked under the branch master, you could use this command:
 ```
