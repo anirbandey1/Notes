@@ -7,3 +7,9 @@ AUR packages or other third party repositories
 ```
 pacman -Qm 
 ```
+
+To see where packaes are installed
+```
+pacman -Ql
+```
+
