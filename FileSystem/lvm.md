@@ -18,3 +18,7 @@ Increase size of my lvm
 ```
 lvextend -L +10G /dev/vg0/lv_root
 ```
+Now to make df -h recognize this change
+```
+sudo resize2fs /dev/vg0/lv_root
+```
