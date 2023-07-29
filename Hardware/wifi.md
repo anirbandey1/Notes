@@ -10,6 +10,9 @@ sudo apt install dkms git
 sudo apt install build-essential libelf-dev 
 sudo apt install linux-headers-$(uname -r)
 
+# For TP Link AC1300
+sudo apt install iw
+
 ```
 
 
