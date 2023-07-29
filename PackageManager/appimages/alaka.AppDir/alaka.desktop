@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Alaka (AppImage)
+Exec=/usr/bin/binary.sh
+Icon=/usr/share/icons/ac-adapter
+Type=Application
+Categories=Utility

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+HERE="$(dirname "$(readlink -f "${0}")")"
+# echo $HERE
+EXEC="${HERE}/usr/bin/binary.sh"
+
+
+exec "${EXEC}"
