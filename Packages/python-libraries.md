@@ -38,3 +38,5 @@ python -m pip freeze
 # to see all packages installed in the active virtualenv
 python -c "import sklearn; sklearn.show_versions()"
 ```
+python3 -m pip install --user --upgrade PySide6
+python3 -m pip install --user --upgrade pylint
