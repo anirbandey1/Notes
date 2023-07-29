@@ -2,6 +2,6 @@
 for coding related notes
 
 To clone this repo
-```
-gh repo clone awesomeDev12/Notes ~/Code/Notes
+```sh
+git clone https://github.com/anirbandey1/Notes ~/Code/Notes
 ```
