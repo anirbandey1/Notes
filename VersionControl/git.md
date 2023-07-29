@@ -45,4 +45,15 @@ To push the current branch and set the remote as upstream, use
 ```
 
 
+## Rebase 
+
+[StacKOverflow](https://stackoverflow.com/questions/750172/how-do-i-change-the-author-and-committer-name-email-for-multiple-commits#1320317)
+Rebase entire project
+
+```sh
+git rebase -r --root --exec "git commit --amend --no-edit --reset-author"
+``
+
+
+
 
