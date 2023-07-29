@@ -3,10 +3,11 @@
 Install
 ```
 sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pipewire-docs 
-sudo pacman -S helvum easyeffects
-
 sudo pacman -S wireplumber
 sudo pacman -S pavucontrol
+
+# Optional
+# sudo pacman -S helvum easyeffects
 
 ```
 

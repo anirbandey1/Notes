@@ -105,3 +105,23 @@ To check if libvirtd is missing anything
 sudo systemctl status libvirtd
 sudo systemctl restart libvirtd
 ```
+
+
+# Just do 
+```
+
+LC_ALL=C lscpu | grep Virtualization
+
+sudo pacman -S qemu libvirt iptables-nft dnsmasq virt-manager
+
+sudo pacman -S bridge-utils
+sudo pacman -S dmidecode
+
+sudo systemctl --enable now libvirtd
+sudo systemctl status libvirtd
+sudo usermod -a $USER -G libvirt
+
+
+
+```
+
