@@ -52,8 +52,39 @@ Rebase entire project
 
 ```sh
 git rebase -r --root --exec "git commit --amend --no-edit --reset-author"
-``
+```
 
+## Tags
+
+List tags
+```
+git tag
+```
+
+Details of Specific tag
+```
+git show v1.0.0
+```
+
+Create 
+```
+git tag v1.0.1
+```
+
+Delete tag
+```
+git tag -d v1.0.1
+```
+
+Pushing to remote
+```
+git push origin v1.0.2
+```
+
+Delete remote tag
+```
+git push origin -d v1.0.2
+```
 
 
 
